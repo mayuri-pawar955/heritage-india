@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Heritage India | Login</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVIGATION BAR
+     ===================================================== -->
+
+<nav class="navbar">
+
+    <a href="index.html" class="logo">
+
+        <img src="./images/logo.png"
+             alt="Heritage India Logo">
+
+    </a>
+
+
+    <!-- MOBILE MENU -->
+
+    <div class="menu-btn"
+         onclick="toggleMenu()">
+
+        ☰
+
+    </div>
+
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            HOME
+        </a>
+
+        <a href="destinations.html">
+            DESTINATIONS
+        </a>
+
+        <a href="packages.html">
+            PACKAGES
+        </a>
+
+        <a href="gallery.html">
+            GALLERY
+        </a>
+
+        <a href="contact.html">
+            CONTACT
+        </a>
+
+        <a href="login.html"
+           class="login-nav active">
+
+            LOGIN
+
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     LOGIN PAGE BACKGROUND
+     ===================================================== -->
+
+<div class="login-page">
+
+
+    <div class="auth-wrapper">
+
+
+        <!-- =================================================
+             LOGIN BOX
+             ================================================= -->
+
+        <div id="loginBox"
+             class="auth-box">
+
+
+            <h1>
+                LOGIN
+            </h1>
+
+
+            <div class="auth-line"></div>
+
+
+            <p class="auth-subtitle">
+
+                Enter your credentials to continue
+
+            </p>
+
+
+            <form id="loginForm"
+                  onsubmit="loginUser(event)">
+
+
+                <!-- USERNAME -->
+
+                <label for="loginUsername">
+
+                    Username
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="loginUsername"
+                    placeholder="Enter Username"
+                    required
+                >
+
+
+
+                <!-- PASSWORD -->
+
+                <label for="loginPassword">
+
+                    Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter Password"
+                    required
+                >
+
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button
+                    type="submit"
+                    class="auth-button">
+
+                    LOGIN
+
+                </button>
+
+            </form>
+
+
+
+            <!-- REGISTER LINK -->
+
+            <p class="register-text">
+
+                Don't have an account?
+
+                <a href="#"
+                   onclick="showRegister(); return false;">
+
+                    Register
+
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+
+        <!-- =================================================
+             REGISTER BOX
+             ================================================= -->
+
+        <div id="registerBox"
+             class="auth-box register-box">
+
+
+            <h1>
+                REGISTER
+            </h1>
+
+
+            <div class="auth-line"></div>
+
+
+            <p class="auth-subtitle">
+
+                Create your Heritage India account
+
+            </p>
+
+
+
+            <form id="registerForm"
+                  onsubmit="registerUser(event)">
+
+
+                <!-- FULL NAME -->
+
+                <label for="registerName">
+
+                    Full Name
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Enter Full Name"
+                    required
+                >
+
+
+
+                <!-- EMAIL -->
+
+                <label for="registerEmail">
+
+                    Email
+
+                </label>
+
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Enter Email"
+                    required
+                >
+
+
+
+                <!-- USERNAME -->
+
+                <label for="registerUsername">
+
+                    Username
+
+                </label>
+
+
+                <input
+                    type="text"
+                    id="registerUsername"
+                    placeholder="Create Username"
+                    required
+                >
+
+
+
+                <!-- PASSWORD -->
+
+                <label for="registerPassword">
+
+                    Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create Password"
+                    minlength="6"
+                    required
+                >
+
+
+
+                <!-- CONFIRM PASSWORD -->
+
+                <label for="confirmPassword">
+
+                    Confirm Password
+
+                </label>
+
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="Confirm Password"
+                    minlength="6"
+                    required
+                >
+
+
+
+                <!-- REGISTER BUTTON -->
+
+                <button
+                    type="submit"
+                    class="auth-button">
+
+                    CREATE ACCOUNT
+
+                </button>
+
+
+            </form>
+
+
+
+            <!-- LOGIN LINK -->
+
+            <p class="register-text">
+
+                Already have an account?
+
+                <a href="#"
+                   onclick="showLogin(); return false;">
+
+                    Login
+
+                </a>
+
+            </p>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer class="footer">
+
+    <h3>
+        HERITAGE INDIA
+    </h3>
+
+
+    <p>
+        Discover • Explore • Experience India's Heritage
+    </p>
+
+
+    <br>
+
+
+    <p>
+        © 2026 Heritage India. All Rights Reserved.
+    </p>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
